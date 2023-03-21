@@ -1,26 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
+<meta charset="UTF-8">
+
 	<title>Andagel</title>
 	<style>
 		html, body {
-			margin: 0;
-			padding: 0;
-			height: 100%;
-		}
-		
-		.container {
-			height: 100%;
-			background-image: url('planete.jpg');
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: cover;
-		}
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url('planete.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container img {
+    max-width: 50%;
+    max-height: 50vh; /* set the height to half of the viewport height */
+    object-fit: contain; /* maintain aspect ratio */
+    display: block; /* remove extra space below the image */
+    margin: 0 auto; /* center the image horizontally */
+}
+
 	</style>
+
 </head>
-<body>
-	<div class="container">
-		<!-- Add any content you want here -->
-	</div>
+
+<body class="screwmanity">
+<div class="container">
+	<img src="assets/img/logo.png" width="1920" height="1080" alt="Andagel"/> </div>
+
 </body>
 </html>
